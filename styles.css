@@ -93,9 +93,12 @@ a:hover {
     height: 200px;
     width: 300px;
     padding: 10px 10px;
+    border-radius: 25%;
+
+
 }
 .text-top {
-    text-shadow: 2px 2px #706E6C;
+    text-shadow: 2px 2px black;
     font-size: 30px;
     padding: 0;
     margin-bottom: 60px;
@@ -144,7 +147,7 @@ h3 {
     margin: 40px;
     min-height: 0;
     border: 1px solid white;
-    border-radius: 10%;
+    border-radius: 12%;
 }
 footer {
     padding-top: 85px;
