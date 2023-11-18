@@ -5,38 +5,48 @@ body {
     font-size: 22px;
     color: seashell;
     background-color: black;
-    opacity: 0.9;
+    opacity: 0.9 !important;
     text-align: center;
     margin: 0;
 }
 
 .header {
-    height: 50px;
-    width: 100%;
-    display: block;
+    height: 69px;
     background-color: black;
-    border-bottom: 1px solid seashell;
+    width: 100%;
     position: fixed;
-    top: 0px;
-    z-index: 10;
+    top: 0;
+    border-bottom: 1px solid seashell;
+    
+}
+ul {
+    display: block;
+    border-bottom: 1px solid transparent;
+    text-decoration: none;
+    list-style-type: none;
 }
 
+li {
+    display: inline-block;
+    margin-right: 10px;
+    margin-top: 14px;
+}
+a:hover {
+    text-decoration: none;
+    border-bottom: 1px solid blue;
+    display: inline-block;
+}
 .logo {
-    height: 45px;
-    padding-left: 10px;
+    height: 50px;
     float: left;
-
+    padding-left: 10px;
+    margin-top: 5px;
 }
 
 .nav {
-   
-    text-decoration: underline;
-    list-style-type: none;
     float: right;
+    height: 100%;
     margin: 0 auto;
-    display: inline-flex;
-    background-color: black;
-
 }
 
 .nav a {
@@ -44,15 +54,14 @@ body {
     height: 100%;
     display: table;
     float: left;
-    padding: 10px 20px;
     color: white;
 }
 
 .nav a li {
-    font-size: 22px;
-    color: #706E6C;
-    padding:  0px 0px 10px 0px;
+    height: 100%;
     text-decoration: underline;
+    color: white;
+    float: right;
 }
 
 .mission-image {
@@ -86,7 +95,10 @@ body {
     padding: 10px 10px;
 }
 .text-top {
-    text-align: center;
+    text-shadow: 2px 2px #706E6C;
+    font-size: 30px;
+    padding: 0;
+    margin-bottom: 60px;
 }
 
 .location-img {
@@ -103,6 +115,21 @@ body {
 .box-container {
     display: flex;
     flex-direction: row;
+    overflow: visible;
+    min-width: 0;
+
+}
+h3 {
+    text-align: center;
+    color: white;
+    font-size: 22px;
+}
+ p {
+    text-align: center;
+    color: white;
+    min-width: 0;
+    min-height: auto;
+    font-size: 18px;
 }
 
 .location-box {
@@ -115,6 +142,9 @@ body {
     align-items: center;
     justify-content: center;
     margin: 40px;
+    min-height: 0;
+    border: 1px solid white;
+    border-radius: 10%;
 }
 footer {
     padding-top: 85px;
